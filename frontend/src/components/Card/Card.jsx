@@ -10,7 +10,6 @@ import axios from "axios";
 import { onAuthStateChanged } from "firebase/auth";
 import { firebaseAuth } from "../../utils/firebase-config";
 import { useDispatch } from "react-redux";
-import video from "../../assets/SampleVideo_1280x720_30mb.mp4";
 import { removeFromLikedMovies } from "../../store/index";
 import "./Card.css";
 
