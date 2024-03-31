@@ -34,8 +34,8 @@ const Pricing = () => {
           },
         ],
         mode: "subscription",
-        successUrl: `http://localhost:5173/success`,
-        cancelUrl: `http://localhost:5173/error`,
+        successUrl: `https://flixxit-main.netlify.app`,
+        cancelUrl: `https://flixxit-main.netlify.app`,
         customerEmail: email,
       });
       console.warn(error.message);
@@ -48,8 +48,8 @@ const Pricing = () => {
           },
         ],
         mode: "subscription",
-        successUrl: `http://localhost:5173/`,
-        cancelUrl: `http://localhost:5173/`,
+        successUrl: `https://flixxit-main.netlify.app`,
+        cancelUrl: `https://flixxit-main.netlify.app`,
         customerEmail: email,
       });
       console.warn(error.message);
