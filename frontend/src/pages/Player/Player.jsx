@@ -49,7 +49,6 @@ const Player = () => {
         if (video) {
           return video;
         } else {
-          console.log(video);
           return vid.type === "Trailer";
         }
       });
