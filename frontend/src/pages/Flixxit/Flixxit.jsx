@@ -68,7 +68,7 @@ const Flixxit = () => {
       };
 
       if (movieData) {
-        await axios.post("http://localhost:5000/api/user/add", {
+        await axios.post("https://flixxit-main.onrender.com/api/user/add", {
           email,
           data: movieData,
         });
