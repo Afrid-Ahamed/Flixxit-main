@@ -85,9 +85,7 @@ export const getUserLikedMovies = createAsyncThunk(
       const { data } = await axios.get(
         `https://flixxit-main.onrender.com/api/user/liked/${email}`
       );
-      console.log(data);
       const movies = data?.movies || [];
-      console.log(movies);
       return movies;
     } catch (error) {
       const movies = [];
