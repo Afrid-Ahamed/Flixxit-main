@@ -12,11 +12,13 @@ const Pricing = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [email, setEmail] = useState(undefined);
 
-  onAuthStateChanged(firebaseAuth, (currentUser) => {
-    if (currentUser) {
-      setEmail(currentUser.email);
-    } else navigate("/login");
-  });
+  useEffect(() => {
+    onAuthStateChanged(firebaseAuth, (currentUser) => {
+      if (currentUser) {
+        setEmail(currentUser.email);
+      } else navigate("/login");
+    });
+  }, [navigate]);
 
   window.onscroll = () => {
     setIsScrolled(window.scrollY === 0 ? false : true);
